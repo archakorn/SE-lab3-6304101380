@@ -6,7 +6,7 @@
       @reset="onReset"
       class="q-gutter-md"
     >
-      <q-input
+    <q-input
         filled
         v-model="name"
         label="ชื่อ - สกุล *"
@@ -14,6 +14,15 @@
         lazy-rules
         :rules="[ val => val && val.length > 0 || 'กรุณาใส่ชื่อและนามสกุล']"
       />
+      <q-input
+        filled
+        v-model="name"
+        label="Your name *"
+        hint="Name and Lastname"
+        lazy-rules
+        :rules="[ val => val && val.length > 0 || 'Please Enter your name and lastname']"
+      />
+
 
       <q-input
         filled
